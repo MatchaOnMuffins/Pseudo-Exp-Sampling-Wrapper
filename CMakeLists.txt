@@ -16,11 +16,6 @@ IF (APPLE)
     SET(CMAKE_OSX_ARCHITECTURES "x86_64;arm64")
 ENDIF (APPLE)
 
-# if windows
-IF (WIN32)
-    SET(CMAKE_GENERATOR_PLATFORM "x86_64")
-ENDIF (WIN32)
-
 # add library
 add_library(Pseudo_Exp_Sampling SHARED ${SOURCE_FILES})
 
